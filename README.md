@@ -8,14 +8,14 @@ Selected improvements and features were adapted from Belgian Chocolate Duke 3D b
 
 The codebase has been extensively modified and extended for the Sega Dreamcast. Some of these changes have also been retained in the PC version, which is also supported.
 
-Dreamcast VMU and controller vibration functionality was adapted from ChillyWilly's Dreamcast port of Doom and subsequently modified by me.
+Dreamcast VMU and vibration code from DoomDC (Chilly Willy), subsequently modified and adapted by me for Chocolate Duke3D DC.
 
 ## Credits
 
 * **Ivan Guber** — Sega Dreamcast port and additional modifications for the PC version
 * **Fabien Sanglard** — [Chocolate Duke Nukem 3D](https://github.com/fabiensanglard/chocolate_duke3D)
 * **Tanguy Fautre (GPSnoopy)** — [Belgian Chocolate Duke 3D](https://github.com/GPSnoopy/BelgianChocolateDuke3D)
-* **ChillyWilly** — Dreamcast Doom VMU and controller vibration code
+* **Chilly Willy** — Dreamcast Doom VMU and controller vibration code
 * **Ken Silverman** — Build Engine
 * **3D Realms Entertainment** — original Duke Nukem 3D
 
