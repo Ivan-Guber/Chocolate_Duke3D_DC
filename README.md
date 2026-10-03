@@ -15,7 +15,7 @@ Dreamcast VMU and vibration code from DoomDC (Chilly Willy), subsequently modifi
 * **Ivan Guber** — Sega Dreamcast port and additional modifications for the PC version
 * **Fabien Sanglard** — [Chocolate Duke Nukem 3D](https://github.com/fabiensanglard/chocolate_duke3D)
 * **Tanguy Fautre (GPSnoopy)** — [Belgian Chocolate Duke 3D](https://github.com/GPSnoopy/BelgianChocolateDuke3D)
-* **Chilly Willy** — Dreamcast Doom VMU and controller vibration code
+* **Chilly Willy** — [Doom_for_Dreamcast](https://dreamcast.wiki/Doom_for_Dreamcast)
 * **Ken Silverman** — Build Engine
 * **3D Realms Entertainment** — original Duke Nukem 3D
 
