@@ -1,4 +1,5 @@
 # Chocolate_Duke3D_DC
+
 A Sega Dreamcast port of Chocolate Duke Nukem 3D by Ivan Guber.
 
 The project is primarily based on Chocolate Duke Nukem 3D by Fabien Sanglard.
@@ -9,19 +10,21 @@ The codebase has been extensively modified and extended for the Sega Dreamcast. 
 
 Dreamcast VMU and controller vibration functionality was adapted from ChillyWilly's Dreamcast port of Doom and subsequently modified by me.
 
-Credits
-Ivan Guber — Sega Dreamcast port and additional modifications for PC version.
-Fabien Sanglard — Chocolate Duke Nukem 3D https://github.com/fabiensanglard/chocolate_duke3D
-Tanguy Fautre (GPSnoopy) — Belgian Chocolate Duke 3D https://github.com/GPSnoopy/BelgianChocolateDuke3D
-ChillyWilly — Dreamcast DOOM VMU and vibration code (no DoomDC github?)
-Ken Silverman — Build Engine
-3D Realms Entertainment — original Duke Nukem 3D
-Dependencies
+## Credits
+
+* **Ivan Guber** — Sega Dreamcast port and additional modifications for the PC version
+* **Fabien Sanglard** — [Chocolate Duke Nukem 3D](https://github.com/fabiensanglard/chocolate_duke3D)
+* **Tanguy Fautre (GPSnoopy)** — [Belgian Chocolate Duke 3D](https://github.com/GPSnoopy/BelgianChocolateDuke3D)
+* **ChillyWilly** — Dreamcast Doom VMU and controller vibration code
+* **Ken Silverman** — Build Engine
+* **3D Realms Entertainment** — original Duke Nukem 3D
+
+## Dependencies
 
 The Dreamcast port requires:
 
-SDL 1.2
-SDL_mixer
+* **SDL 1.2**
+* **SDL_mixer**
 
 These libraries are not included in this repository and must be provided separately.
 
