@@ -1,0 +1,1098 @@
+# depslib dependency file v1.0
+1733560828 source:d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\cache.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<fcntl.h>
+	<sys/types.h>
+	<sys/stat.h>
+	"platform.h"
+	"display.h"
+	"fixedPoint_math.h"
+	"cache.h"
+	"build.h"
+	"../../Game/src/cvar_defs.h"
+	"../../Game/src/types.h"
+
+1730462532 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\platform.h
+	"win32_compat.h"
+	"unix_compat.h"
+	"doscmpat.h"
+	"macos_compat.h"
+	"unix_compat.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\win32_compat.h
+	<stdio.h>
+	<unistd.h>
+	<fcntl.h>
+	<SYS\STAT.H>
+	<stdlib.h>
+	<io.h>
+	<direct.h>
+	<conio.h>
+	<dos.h>
+	<assert.h>
+	<string.h>
+	"windows/inttypes.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\windows\inttypes.h
+	"stdint.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\windows\stdint.h
+	<limits.h>
+	<wchar.h>
+
+1733560856 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\unix_compat.h
+	<stdlib.h>
+	<inttypes.h>
+	<assert.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<sys/uio.h>
+	<unistd.h>
+	<fcntl.h>
+	<dirent.h>
+	<string.h>
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\macos_compat.h
+	<stdlib.h>
+	<inttypes.h>
+	<assert.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<sys/uio.h>
+	<unistd.h>
+	<fcntl.h>
+	<string.h>
+
+1625662568 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\display.h
+	"platform.h"
+
+1790051449 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\fixedpoint_math.h
+	"platform.h"
+
+1733560636 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\cache.h
+	<stdio.h>
+
+1737904370 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\build.h
+	"windows/inttypes.h"
+	<inttypes.h>
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\cvar_defs.h
+	"../../Engine/src/windows/inttypes.h"
+	<inttypes.h>
+
+1733560582 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\types.h
+	"../../Engine/src/windows/inttypes.h"
+	<inttypes.h>
+
+1790051920 source:d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\draw.c
+	"platform.h"
+	"build.h"
+	"draw.h"
+
+1790052091 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\draw.h
+	"windows/inttypes.h"
+	<inttypes.h>
+
+1625584156 source:d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\dummy_multi.c
+	"build.h"
+
+1790051356 source:d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\engine.c
+	<string.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<fcntl.h>
+	<sys/types.h>
+	<sys/stat.h>
+	"platform.h"
+	<malloc.h>
+	"build.h"
+	"engine.h"
+	"tiles.h"
+	"display.h"
+	"draw.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\engine.h
+	"cache.h"
+	"filesystem.h"
+	"display.h"
+	"fixedPoint_math.h"
+	"tiles.h"
+	"network.h"
+
+1730461282 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\filesystem.h
+	"stdio.h"
+	"platform.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\tiles.h
+	"build.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\network.h
+	"platform.h"
+
+1790934507 source:d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\filesystem.c
+	"filesystem.h"
+	"platform.h"
+	"cache.h"
+	"fixedPoint_math.h"
+	"../../Game/src/global.h"
+	<strings.h>
+	"enet/include/types.h"
+
+1788688090 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\global.h
+
+1790002584 source:d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\fixedpoint_math.c
+	<stdio.h>
+	"platform.h"
+	"fixedPoint_math.h"
+
+1790043226 source:d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\display.c
+	<kos.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<assert.h>
+	<string.h>
+	"platform.h"
+	"SDL.h"
+	<SDL_dreamcast.h>
+	"build.h"
+	"display.h"
+	"fixedPoint_math.h"
+	"engine.h"
+	"network.h"
+	"mmulti_unstable.h"
+	"mmulti_stable.h"
+	"network.h"
+	"icon.h"
+	<windows.h>
+	"draw.h"
+	"cache.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_loadso.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_stdinc.h
+	"SDL_config.h"
+	"memfuncs.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_config.h
+	"SDL_platform.h"
+	"SDL_config_dreamcast.h"
+	"SDL_config_macos.h"
+	"SDL_config_macosx.h"
+	"SDL_config_symbian.h"
+	"SDL_config_win32.h"
+	"SDL_config_os2.h"
+	"SDL_config_minimal.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_platform.h
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_config_dreamcast.h
+	"SDL_platform.h"
+	<inttypes.h>
+	"memfuncs.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\memfuncs.h
+	<stddef.h>
+	<stdint.h>
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_config_macos.h
+	"SDL_platform.h"
+	<MacTypes.h>
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_config_macosx.h
+	"SDL_platform.h"
+	<AvailabilityMacros.h>
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_config_symbian.h
+	"SDL_platform.h"
+	<stdarg.h>
+	<stddef.h>
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_config_win32.h
+	"SDL_platform.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_config_os2.h
+	"SDL_platform.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_config_minimal.h
+	"SDL_platform.h"
+	<stdarg.h>
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\begin_code.h
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\close_code.h
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_endian.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_cdrom.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_active.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_keysym.h
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\mmulti_unstable.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\mmulti_stable.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\icon.h
+
+1625584156 source:d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\mmulti.c
+
+1625584156 source:d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\network.c
+
+1790051449 source:d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\tiles.c
+	<stdlib.h>
+	<string.h>
+	"tiles.h"
+	"engine.h"
+	"draw.h"
+	"filesystem.h"
+
+1790474730 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\actors.c
+	"duke3d.h"
+
+1790934248 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\duke3d.h
+	<kos.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"../../Engine/src/platform.h"
+	<malloc.h>
+	"../../Engine/src/windows/inttypes.h"
+	<inttypes.h>
+	<fcntl.h>
+	<time.h>
+	<ctype.h>
+	"../../Engine/src/build.h"
+	<dos.h>
+	<bios.h>
+	<io.h>
+	"dukeunix.h"
+	"dukeunix.h"
+	"dukewin.h"
+	"SDL.h"
+	<SDL_dreamcast.h>
+	"SDL_mixer.h"
+	"function.h"
+	"../../Game/src/types.h"
+	"file_lib.h"
+	"develop.h"
+	"gamedefs.h"
+	"keyboard.h"
+	"util_lib.h"
+	"function.h"
+	"audiolib/fx_man.h"
+	"config.h"
+	"sounds.h"
+	"control.h"
+	"_rts.h"
+	"rts.h"
+	"soundefs.h"
+	"audiolib/music.h"
+	"names.h"
+	"../../Engine/src/engine.h"
+	"../../Engine/src/fixedPoint_math.h"
+	"audiolib/usrhooks.h"
+	"funct.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\dukeunix.h
+	<unistd.h>
+	<fcntl.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<dirent.h>
+	<assert.h>
+
+1733578102 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\dukewin.h
+	"SDL.h"
+	<SDL_dreamcast.h>
+	<sys/stat.h>
+	<io.h>
+	<assert.h>
+
+1697887870 d:\dreamcast\programming\kos\sdl_mixer-1.2.9\sdl_mixer.h
+	"SDL_types.h"
+	"SDL_rwops.h"
+	"SDL_audio.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_types.h
+	"SDL_stdinc.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\function.h
+
+1625671384 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\file_lib.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\develop.h
+
+1736950288 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\gamedefs.h
+
+1697907320 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\keyboard.h
+
+1625671354 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\util_lib.h
+	"../../Engine/src/windows/inttypes.h"
+	<inttypes.h>
+
+1625662176 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\fx_man.h
+	"sndcards.h"
+	"../../../Engine/src/windows/inttypes.h"
+	<inttypes.h>
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\sndcards.h
+
+1625669908 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\config.h
+
+1625670014 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\sounds.h
+	"audiolib/fx_man.h"
+
+1625670612 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\control.h
+
+1788687598 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\_rts.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\rts.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\soundefs.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\music.h
+	"../duke3d.h"
+	"sndcards.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\names.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\usrhooks.h
+	"../duke3d.h"
+
+1790173344 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\funct.h
+	"duke3d.h"
+
+1788687766 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\animlib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<fcntl.h>
+	"types.h"
+	"develop.h"
+	"util_lib.h"
+	"animlib.h"
+	"stdbool.h"
+
+1788687513 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\animlib.h
+
+1733578102 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\dsl.c
+	<stdlib.h>
+	<string.h>
+	"dsl.h"
+	"util.h"
+	"SDL.h"
+	<SDL_dreamcast.h>
+	"SDL_mixer.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\dsl.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\util.h
+
+1697891344 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\fx_man.c
+	<stdio.h>
+	<stdlib.h>
+	"sndcards.h"
+	"multivoc.h"
+	"dsl.h"
+	"ll_man.h"
+	"user.h"
+	"fx_man.h"
+
+1696342564 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.h
+	<SDL.h>
+	"stdint.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\ll_man.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\user.h
+
+1625584156 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\ll_man.c
+	<stddef.h>
+	"ll_man.h"
+	"dpmi.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\dpmi.h
+	"../../../Engine/src/windows/inttypes.h"
+	<inttypes.h>
+
+1733578102 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<dos.h>
+	<conio.h>
+	"util.h"
+	"dpmi.h"
+	"usrhooks.h"
+	"interrup.h"
+	"dma.h"
+	"linklist.h"
+	"sndcards.h"
+	"blaster.h"
+	"sndscape.h"
+	"sndsrc.h"
+	"pas16.h"
+	"guswave.h"
+	"dsl.h"
+	"pitch.h"
+	"multivoc.h"
+	"_multivc.h"
+	"debugio.h"
+	"../sounddebugdefs.h"
+	<SDL.h>
+	<SDL_dreamcast.h>
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\interrup.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\dma.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\linklist.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\blaster.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\sndscape.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\sndsrc.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\pas16.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\guswave.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\pitch.h
+	"../duke3d.h"
+
+1696926842 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\_multivc.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\debugio.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\sounddebugdefs.h
+
+1730467332 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\mv_mix.c
+	"multivoc.h"
+
+1625584156 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\mvreverb.c
+	"multivoc.h"
+	"_multivc.h"
+	"stdint.h"
+
+1625584156 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\nodpmi.c
+	<stdlib.h>
+	<string.h>
+	"dpmi.h"
+
+1625584156 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\pitch.c
+	<stdlib.h>
+	"dpmi.h"
+	"standard.h"
+	"pitch.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\standard.h
+
+1625584156 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\user.c
+	<string.h>
+	"user.h"
+
+1790254693 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\config.c
+	<conio.h>
+	<dos.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<time.h>
+	"duke3d.h"
+	"scriplib.h"
+	"../../Engine/src/build.h"
+	"_functio.h"
+
+1725026560 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\scriplib.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\_functio.h
+
+1625584156 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\console.c
+	"duke3d.h"
+	"console.h"
+	"cvars.h"
+	"cvar_defs.h"
+	<stdarg.h>
+	<stdio.h>
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\console.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\cvars.h
+	"../../Engine/src/windows/inttypes.h"
+	<inttypes.h>
+
+1788687880 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\control.c
+	"duke3d.h"
+	"control.h"
+	"mouse.h"
+	"joystick.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\mouse.h
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\joystick.h
+
+1625584156 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\cvar_defs.c
+	<stdlib.h>
+	"cvars.h"
+	"cvar_defs.h"
+	"console.h"
+	"../../Game/src/types.h"
+	"../../Engine/src/build.h"
+	"funct.h"
+	"duke3d.h"
+	"sounddebugdefs.h"
+	"joystick.h"
+	"audiolib/music.h"
+
+1625584156 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\cvars.c
+	"cvars.h"
+	"cvar_defs.h"
+	<stdlib.h>
+	<string.h>
+
+1696340080 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\dummy_audiolib.c
+	"audiolib/fx_man.h"
+	<inttypes.h>
+	<stdio.h>
+	"audiolib/music.h"
+
+1790935333 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\game.c
+	<windows.h>
+	"SDL.h"
+	<kos.h>
+	<kos/dbgio.h>
+	<arch/gdb.h>
+	<SDL_keysym.h>
+	<SDL_stdinc.h>
+	<SDL_dreamcast.h>
+	"types.h"
+	"develop.h"
+	"scriplib.h"
+	"file_lib.h"
+	"gamedefs.h"
+	"keyboard.h"
+	"util_lib.h"
+	"function.h"
+	"control.h"
+	"sounds.h"
+	"config.h"
+	"audiolib/sndcards.h"
+	"duke3d.h"
+	"console.h"
+	"cvars.h"
+	"cvar_defs.h"
+	<sys/types.h>
+	<sys/stat.h>
+	"global.h"
+	<dirent.h>
+
+1683142833 d:\dreamcast\programming\kos\sdl-dreamhal\include\sdl_dreamcast.h
+
+1625584156 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\gamedef.c
+	"duke3d.h"
+
+1788688664 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\global.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	<errno.h>
+	"global.h"
+	"duke3d.h"
+	"SDL.h"
+	<SDL_dreamcast.h>
+	"../../Engine\src/enet/include/types.h"
+
+1724511728 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\ide.c
+	<dc/g1ata.h>
+	<fat/fs_fat.h>
+	<stdint.h>
+	<stdio.h>
+
+1625584156 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\keyboard.c
+	"duke3d.h"
+	"keyboard.h"
+
+1790953815 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\menues.c
+	"duke3d.h"
+	"mouse.h"
+	"animlib.h"
+	"control.h"
+	"../../Engine/src/filesystem.h"
+	"SDL.h"
+	<SDL_dreamcast.h>
+	"premap.h"
+	"../../Engine/src/display.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\premap.h
+
+1733578102 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\midi\sdl_midi.c
+	<stdio.h>
+	"../audiolib/music.h"
+	"SDL.h"
+	<SDL_dreamcast.h>
+	"SDL_mixer.h"
+	"../../../Engine/src/build.h"
+
+1789127048 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\player.c
+	"duke3d.h"
+
+1790175442 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\premap.c
+	"duke3d.h"
+	"../../Engine/src/filesystem.h"
+	"game.h"
+
+1625584156 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\game.h
+
+1788688712 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\rts.c
+	"duke3d.h"
+	"global.h"
+
+1725027350 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\scriplib.c
+	<assert.h>
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"duke3d.h"
+	"scriplib.h"
+
+1724492786 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\sddc.c
+	<kos.h>
+	<zlib.h>
+	<dc/sd.h>
+	<fat/fs_fat.h>
+	<stdint.h>
+	<stdio.h>
+
+1788626747 c:\dreamsdk\msys\1.0\opt\toolchains\dc\kos-ports\zlib\inst\include\zlib.h
+	<zconf.h>
+	"zconf.h"
+
+1788626747 c:\dreamsdk\msys\1.0\opt\toolchains\dc\kos-ports\zlib\inst\include\zconf.h
+	<stddef.h>
+	<windows.h>
+	<limits.h>
+	<sys/types.h>
+	<stdarg.h>
+	<stddef.h>
+	<unistd.h>
+	<unixio.h>
+
+1721992950 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\sector.c
+	"duke3d.h"
+
+1698480318 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\sounds.c
+	<conio.h>
+	<stdio.h>
+	<string.h>
+	"../../Game/src/types.h"
+	"util_lib.h"
+	"duke3d.h"
+	"global.h"
+	"../../Engine/src/filesystem.h"
+
+1790953300 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\vmu.c
+	<kos.h>
+	<zlib.h>
+	"vmu.h"
+
+1788685673 d:\dreamcast\programming\kos\chocolate_duke3d\game\src\vmu.h
+
+1788688585 source:d:\dreamcast\programming\kos\chocolate_duke3d\game\src\jump_pack.c
+	<kos.h>
+	<dc/maple/purupuru.h>
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_loadso.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_config.h
+	"SDL_platform.h"
+	"SDL_config_dreamcast.h"
+	"SDL_config_macos.h"
+	"SDL_config_macosx.h"
+	"SDL_config_symbian.h"
+	"SDL_config_win32.h"
+	"SDL_config_os2.h"
+	"SDL_config_minimal.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_platform.h
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_config_dreamcast.h
+	"SDL_platform.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_config_macos.h
+	"SDL_platform.h"
+	<MacTypes.h>
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_config_macosx.h
+	"SDL_platform.h"
+	<AvailabilityMacros.h>
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_config_symbian.h
+	"SDL_platform.h"
+	<stdarg.h>
+	<stddef.h>
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_config_win32.h
+	"SDL_platform.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_config_os2.h
+	"SDL_platform.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_config_minimal.h
+	"SDL_platform.h"
+	<stdarg.h>
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\begin_code.h
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\close_code.h
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	<sys/byteorder.h>
+	<endian.h>
+	<sys/endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_cdrom.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_active.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_keysym.h
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_dreamcast.h
+
+1788631018 c:\dreamsdk\opt\toolchains\dc\kos-ports\sdl\inst\include\sdl_types.h
+	"SDL_stdinc.h"
+
+1788688419 d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\enet\include\types.h
+

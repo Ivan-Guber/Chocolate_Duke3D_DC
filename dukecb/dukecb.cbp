@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="dukecb" />
+		<Option pch_mode="2" />
+		<Option compiler="dc-gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/dukecb.elf" prefix_auto="1" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="5" />
+				<Option compiler="dc-gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g -Wa,-g -Wl,-g" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/dukecb.elf" prefix_auto="1" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="5" />
+				<Option compiler="dc-gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Wall" />
+					<Add option="-DRELEASE" />
+				</Compiler>
+				<Linker>
+					<Add option="-O3" />
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fcommon" />
+			<Add option="-m4-single-only" />
+			<Add option="-ffast-math" />
+			<Add option="-fomit-frame-pointer" />
+			<Add option="-fno-defer-pop" />
+			<Add option="-fno-strict-aliasing" />
+			<Add option="-D_arch_dreamcast" />
+			<Add option="-DUSE_SDL" />
+			<Add option="-Drumble" />
+			<Add option="-Dvmulcd" />
+			<Add option="-Dncaribbean" />
+			<Add option="-DPLATFORM_SUPPORTS_SDL" />
+			<Add option="-DLITTLE_ENDIAN" />
+			<Add directory="$(#dreamsdk_portsincpath)/freetype2" />
+			<Add directory="C:/DreamSDK/opt/toolchains/dc/kos-ports/SDL/inst/include" />
+			<Add directory="D:/Dreamcast/Programming/KOS/SDL_mixer-1.2.9" />
+			<Add directory="C:/DreamSDK/msys/1.0/opt/toolchains/dc/kos-ports/zlib/inst/include" />
+		</Compiler>
+		<Linker>
+			<Add library="SDL_mixer" />
+			<Add library="SDL1.2" />
+			<Add library="z" />
+		</Linker>
+		<Unit filename="../Engine/src/cache.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Engine/src/display.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Engine/src/draw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Engine/src/dummy_multi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Engine/src/engine.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Engine/src/filesystem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Engine/src/fixedPoint_math.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Engine/src/mmulti.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Engine/src/network.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Engine/src/tiles.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/actors.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/animlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/audiolib/dsl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/audiolib/fx_man.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/audiolib/ll_man.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/audiolib/multivoc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/audiolib/mv_mix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/audiolib/mvreverb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/audiolib/nodpmi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/audiolib/pitch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/audiolib/user.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/console.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/control.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/cvar_defs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/cvars.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/game.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/gamedef.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/global.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/jump_pack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/keyboard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/menues.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/midi/sdl_midi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/player.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/premap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/rts.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/scriplib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/sector.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/sounds.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Game/src/vmu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cd/cd_root/cdfs.txt" />
+		<Unit filename="cd/cd_root/dreamsdk.pvr" />
+		<Unit filename="rd/romdisk/romfs.txt" />
+		<Unit filename="rdcd/cd_root/cdfs.txt" />
+		<Unit filename="rdcd/cd_root/dreamsdk.pvr" />
+		<Unit filename="rdcd/romdisk/romfs.txt" />
+		<Extensions>
+			<compiler project_loader_arguments="">
+				<compiler_settings target="Debug" target_loader_arguments="" />
+				<compiler_settings target="Release" target_loader_arguments="" />
+			</compiler>
+			<debugger>
+				<remote_debugging target="Debug">
+					<options conn_type="0" ip_address="localhost" ip_port="2159" loader_arguments="" loader_waiting_time="0" />
+				</remote_debugging>
+			</debugger>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Audiolib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Human\AppData\Local\Temp\RSP4328.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "PLATFORM_WIN32" /D "VS6" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/Audiolib.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Dreamcast\Programming\KOS\chocolate_duke3D\Game\src\audiolib\fx_man.c"
+"D:\Dreamcast\Programming\KOS\chocolate_duke3D\Game\src\audiolib\multivoc.c"
+"D:\Dreamcast\Programming\KOS\chocolate_duke3D\Game\src\audiolib\mv_mix.c"
+"D:\Dreamcast\Programming\KOS\chocolate_duke3D\Game\src\audiolib\mvreverb.c"
+]
+Creating command line "cl.exe @C:\Users\Human\AppData\Local\Temp\RSP4328.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Debug\Audiolib.lib"  .\Debug\user.obj .\Debug\dsl.obj .\Debug\fx_man.obj .\Debug\ll_man.obj .\Debug\multivoc.obj .\Debug\mv_mix.obj .\Debug\mvreverb.obj .\Debug\nodpmi.obj .\Debug\pitch.obj "
+<h3>Output Window</h3>
+Compiling...
+fx_man.c
+d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\windows\stdint.h(75) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\windows\stdint.h(76) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\windows\stdint.h(77) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\windows\stdint.h(78) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\windows\stdint.h(79) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\windows\stdint.h(80) : warning C4142: benign redefinition of type
+multivoc.c
+d:\dreamcast\programming\dreamcast_wince\projects\duke_nukem_3d\sdl-1.2.15\include\sdl_config_win32.h(33) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\dreamcast_wince\projects\duke_nukem_3d\sdl-1.2.15\include\sdl_config_win32.h(34) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\dreamcast_wince\projects\duke_nukem_3d\sdl-1.2.15\include\sdl_config_win32.h(35) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\dreamcast_wince\projects\duke_nukem_3d\sdl-1.2.15\include\sdl_config_win32.h(36) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\dreamcast_wince\projects\duke_nukem_3d\sdl-1.2.15\include\sdl_config_win32.h(37) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\dreamcast_wince\projects\duke_nukem_3d\sdl-1.2.15\include\sdl_config_win32.h(38) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(416) : warning C4090: '=' : different 'volatile' qualifiers
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(1425) : warning C4028: formal parameter 3 different from declaration
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(1429) : warning C4028: formal parameter 3 different from declaration
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(1434) : warning C4028: formal parameter 3 different from declaration
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(1439) : warning C4028: formal parameter 3 different from declaration
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(1443) : warning C4028: formal parameter 3 different from declaration
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(1447) : warning C4028: formal parameter 3 different from declaration
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(1451) : warning C4028: formal parameter 3 different from declaration
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(1455) : warning C4028: formal parameter 3 different from declaration
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(1459) : warning C4028: formal parameter 3 different from declaration
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(2389) : warning C4244: '=' : conversion from 'unsigned short ' to 'char ', possible loss of data
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(2403) : warning C4018: '<' : signed/unsigned mismatch
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(2428) : warning C4018: '>=' : signed/unsigned mismatch
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3127) : warning C4028: formal parameter 1 different from declaration
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3322) : warning C4090: '=' : different 'volatile' qualifiers
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3323) : warning C4090: '=' : different 'volatile' qualifiers
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3327) : warning C4090: '=' : different 'volatile' qualifiers
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3496) : warning C4133: '=' : incompatible types - from 'char *' to 'double *'
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3607) : warning C4090: '=' : different 'volatile' qualifiers
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3608) : warning C4090: '=' : different 'volatile' qualifiers
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3660) : warning C4090: 'function' : different 'volatile' qualifiers
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3660) : warning C4022: 'DPMI_UnlockMemory' : pointer mismatch for actual parameter 1
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3661) : warning C4090: 'function' : different 'volatile' qualifiers
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3661) : warning C4022: 'DPMI_UnlockMemory' : pointer mismatch for actual parameter 1
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3720) : warning C4090: 'function' : different 'volatile' qualifiers
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3720) : warning C4022: 'DPMI_LockMemory' : pointer mismatch for actual parameter 1
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3721) : warning C4090: 'function' : different 'volatile' qualifiers
+d:\dreamcast\programming\kos\chocolate_duke3d\game\src\audiolib\multivoc.c(3721) : warning C4022: 'DPMI_LockMemory' : pointer mismatch for actual parameter 1
+mv_mix.c
+d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\windows\stdint.h(75) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\windows\stdint.h(76) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\windows\stdint.h(77) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\windows\stdint.h(78) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\windows\stdint.h(79) : warning C4142: benign redefinition of type
+d:\dreamcast\programming\kos\chocolate_duke3d\engine\src\windows\stdint.h(80) : warning C4142: benign redefinition of type
+mvreverb.c
+D:\Dreamcast\Programming\KOS\chocolate_duke3D\Game\src\audiolib\mvreverb.c(283) : warning C4305: '=' : truncation from 'const int ' to 'char '
+Creating library...
+
+
+
+<h3>Results</h3>
+Audiolib.lib - 0 error(s), 47 warning(s)
+</pre>
+</body>
+</html>

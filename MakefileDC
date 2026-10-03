@@ -1,0 +1,57 @@
+#Chocolate Duke Nukem 3D Dreamcast Port by Ivan Guber
+
+KOS_CFLAGS += -fcommon -m4-single-only -D_arch_dreamcast -DUSE_SDL -DPLATFORM_SUPPORTS_SDL -DRelease -Drumble -Dvmulcd
+	
+KOS_CFLAGS += -I$(KOS_BASE)/../kos-ports/SDL/inst/include -I$(KOS_BASE)/../kos-ports/SDL_mixer-1.2.9 -I$(KOS_BASE)/../kos-ports/zlib/inst/include -L$(KOS_BASE)/../kos-ports/zlib/inst/lib
+KOS_LIBS += -lSDL_mixer -lz -lSDL1.2 -lm
+
+TARGET = chocolate_duke3D.elf
+TARGET_FINAL = 1st_read.bin
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(TARGET) $(TARGET_FINAL) all-after
+
+include $(KOS_BASE)/Makefile.rules
+
+OBJS += Engine/src/cache.o \
+	Engine/src/display.o \
+	Engine/src/draw.o \
+	Engine/src/dummy_multi.o \
+	Engine/src/engine.o \
+	Engine/src/filesystem.o \
+	Engine/src/fixedPoint_math.o \
+	Engine/src/mmulti.o \
+	Engine/src/network.o \
+	Engine/src/tiles.o \
+	
+OBJS += \
+	Game/src/audiolib/fx_man.o \
+	Game/src/audiolib/dsl.o \
+	Game/src/audiolib/ll_man.o \
+	Game/src/audiolib/multivoc.o \
+	Game/src/audiolib/mv_mix.o \
+	Game/src/audiolib/mvreverb.o \
+	Game/src/audiolib/nodpmi.o \
+	Game/src/audiolib/pitch.o \
+	Game/src/audiolib/user.o
+	
+OBJS += \
+	Game/src/midi/sdl_midi.o \
+ 
+OBJS      += Game/src/actors.o Game/src/animlib.o Game/src/config.o Game/src/console.o Game/src/control.o Game/src/cvar_defs.o Game/src/cvars.o Game/src/game.o Game/src/dummy_audiolib.o \
+	     Game/src/gamedef.o Game/src/global.o Game/src/keyboard.o Game/src/menues.o Game/src/player.o Game/src/rts.o Game/src/scriplib.o Game/src/sector.o Game/src/sounds.o Game/src/premap.o Game/src/vmu.o Game/src/jump_pack.o
+
+clean:
+	-rm -f $(TARGET) $(OBJS) 
+
+rm-elf:
+	-rm -f $(TARGET) 
+
+$(TARGET): $(OBJS) 
+	$(KOS_CC) $(KOS_CFLAGS) $(KOS_LIBS) $(KOS_LDFLAGS) -o $(TARGET) $(KOS_START) \
+		$(OBJS) $(OBJEXTRA) $(KOS_LIBS)
+$(TARGET_FINAL) : $(TARGET)
+	@$(KOS_OBJCOPY) -R .stack -O binary $(TARGET) $(TARGET_FINAL)
+
+          

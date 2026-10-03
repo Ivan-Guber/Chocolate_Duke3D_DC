@@ -1,0 +1,51 @@
+// SPDX-License-Identifier: GPL-2.0-only
+/*
+ * IDE (hard drive) handling code
+ *
+ * Copyright (C) 2024 Paul Cercueil <paul@crapouillou.net>
+ */
+#ifdef _arch_dreamcast
+#include <dc/g1ata.h>
+#include <fat/fs_fat.h>
+#include <stdint.h>
+#include <stdio.h>
+
+/* Currently not working with my CF adapter */
+#define IDE_USE_DMA 0
+
+static kos_blockdev_t rv;
+
+int ide_init(void)
+{
+	uint8_t type;
+	int err;
+
+	err = g1_ata_init();
+	if (err)
+		return 0;
+
+	err = g1_ata_blockdev_for_partition(0, IDE_USE_DMA, &rv, &type);
+	if (err)
+		return 0;
+
+	printf("Found IDE partition 0\n");
+
+	err = fs_fat_init();
+	if (err)
+		return 0;
+
+	err = fs_fat_mount("/ide", &rv, FS_FAT_MOUNT_READWRITE);
+	if (err)
+		return 0;
+
+	printf("Mounted IDE partition 0 to /ide\n");
+	return 1;
+}
+
+void ide_shutdown(void)
+{
+	fs_fat_unmount("/ide");
+	fs_fat_shutdown();
+	g1_ata_shutdown();
+}
+#endif
