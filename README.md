@@ -8,7 +8,7 @@ Selected improvements and features were adapted from Belgian Chocolate Duke 3D b
 
 The codebase has been extensively modified and extended for the Sega Dreamcast. Some of these changes have also been retained in the PC version, which is also supported.
 
-VMU and vibration code from Doom_for_Dreamcast (Chilly Willy), subsequently modified and adapted by me for Chocolate Duke3D DC.
+VMU and vibration code from Doom_for_Dreamcast (Chilly Willy), modified by me for Chocolate Duke 3D DC.
 
 ## Credits
 
