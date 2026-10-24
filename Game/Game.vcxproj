@@ -134,7 +134,6 @@
     <ClCompile Include="src\premap.c" />
     <ClCompile Include="src\rts.c" />
     <ClCompile Include="src\scriplib.c" />
-    <ClCompile Include="src\sddc.c" />
     <ClCompile Include="src\sector.c" />
     <ClCompile Include="src\sounds.c" />
     <ClCompile Include="src\audiolib\dsl.c" />

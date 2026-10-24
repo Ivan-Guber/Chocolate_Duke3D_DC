@@ -110,9 +110,6 @@
     <ClCompile Include="src\vmu.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\sddc.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\ide.c">
       <Filter>Source Files</Filter>
     </ClCompile>
