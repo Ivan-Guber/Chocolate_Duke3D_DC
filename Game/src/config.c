@@ -553,50 +553,51 @@ void CONFIG_SetupJoystick( int32 scripthandle )
    SCRIPT_GetNumber( scripthandle, "Controls","EnableRudder",(int32_t*)&CONTROL_RudderEnabled);
 }
 
-void readsavenames_original(void)
+#ifdef PCVER
+void readsavenames(void)
 {
     int32_t dummy;
     short i;
     uint8_t  fn[] = "game_.sav";
-    FILE *fil;
-	char  fullpathsavefilename[16];
+    FILE* fil;
+    char  fullpathsavefilename[16];
 
 
-    for (i=0;i<10;i++)
+    for (i = 0; i < 10; i++)
     {
 
-        fn[4] = i+'0';
+        fn[4] = i + '0';
 
-		// Are we loading a TC?
-		if(getGameDir()[0] != '\0')
-		{
-			// Yes
-			sprintf(fullpathsavefilename, "%s\\%s", getGameDir(), fn);
-		}
-		else
-		{
-			// No
-			sprintf(fullpathsavefilename, "%s", fn);
-		}
+        // Are we loading a TC?
+        if (getGameDir()[0] != '\0')
+        {
+            // Yes
+            sprintf(fullpathsavefilename, "%s\\%s", getGameDir(), fn);
+        }
+        else
+        {
+            // No
+            sprintf(fullpathsavefilename, "%s", fn);
+        }
 
-        if ((fil = fopen(fullpathsavefilename,"rb")) == NULL ) continue;
-        dfread(&dummy,4,1,fil);
+        if ((fil = fopen(fullpathsavefilename, "rb")) == NULL) continue;
+        dfread(&dummy, 4, 1, fil);
 
-		//	FIX_00015: Backward compliance with older demos (down to demos v27, 28, 116 and 117 only)
-        if(	dummy != BYTEVERSION	 &&
-			dummy != BYTEVERSION_27  &&
-			dummy != BYTEVERSION_28  &&
-			dummy != BYTEVERSION_116 &&
-			dummy != BYTEVERSION_117) continue;
+        //	FIX_00015: Backward compliance with older demos (down to demos v27, 28, 116 and 117 only)
+        if (dummy != BYTEVERSION &&
+            dummy != BYTEVERSION_27 &&
+            dummy != BYTEVERSION_28 &&
+            dummy != BYTEVERSION_116 &&
+            dummy != BYTEVERSION_117) continue;
         // FIX_00092: corrupted saved files making the following saved files invisible (Bryzian)
-		dfread(&dummy,4,1,fil);
-        dfread(&ud.savegame[i][0],19,1,fil);
+        dfread(&dummy, 4, 1, fil);
+        dfread(&ud.savegame[i][0], 19, 1, fil);
         fclose(fil);
     }
 }
-#ifndef DCVMU
 
-#ifdef _arch_dreamcast
+
+#else
 int8_t check_vmu(void) {
     maple_device_t* dev;
 
@@ -614,8 +615,6 @@ int8_t check_vmu(void) {
     return 1;
 }
 
-#endif
-
 void readsavenames(void)
 {
     int32_t dummy, ln;
@@ -624,8 +623,8 @@ void readsavenames(void)
     char  fn[] = "game_.sav";
     FILE* fil;
     //char src[32];
-    char  *fullpathsavefilename;
-    char *lfilename;
+    char* fullpathsavefilename;
+    char* lfilename;
 #ifdef _arch_dreamcast
 
     vmucheck = check_vmu();
@@ -633,11 +632,11 @@ void readsavenames(void)
 
     fs_chdir("/ram");//VMU
     //printf("___config gsavecopy = %d\n", gsavesizecopy);
-    if((DC_LoadFromVMU_Config("config.sav"))==0)
-      {
-        if ((fil = fopen("config.sav", "rb")) == NULL) { printf("file config.sav cant open for read\n"); saveonvmu = 0;}
-            else
-            {
+    if ((DC_LoadFromVMU_Config("config.sav")) == 0)
+    {
+        if ((fil = fopen("config.sav", "rb")) == NULL) { printf("file config.sav cant open for read\n"); saveonvmu = 0; }
+        else
+        {
             saveonvmu = 1;
             fread(&gsavesizecopy, sizeof(int), 1, fil);
             fread(&ln, sizeof(int), 1, fil);
@@ -673,20 +672,20 @@ void readsavenames(void)
             fread(&MouseMapping[0], sizeof(int32_t), MAXMOUSEBUTTONS, fil);
             fread(&MouseDigitalAxeMapping[0], sizeof(int32_t), MAXMOUSEAXES * 2, fil);
             fread(&KeyMapping[0], sizeof(struct _KeyMapping), MAXGAMEBUTTONS, fil);
-               fclose(fil);
-            }
-      }
+            fclose(fil);
+        }
+    }
 #endif
 
-    for (i = 0;i < 10;i++)
+    for (i = 0; i < 10; i++)
     {
 
         fn[4] = i + '0';
         fullpathsavefilename = fn;
 
 #ifdef _arch_dreamcast
-        if(gsavesizecopy > 0)
-        DC_LoadFromVMU(fullpathsavefilename, gsavesizecopy);
+        if (gsavesizecopy > 0)
+            DC_LoadFromVMU(fullpathsavefilename, gsavesizecopy);
 
         if ((fil = fopen(fullpathsavefilename, "rb")) == NULL) continue;//VMU
 
@@ -707,68 +706,10 @@ void readsavenames(void)
         fread(&ud.savegame[i][0], 19, 1, fil);
         fclose(fil);
 
-#ifdef _arch_dreamcast
-
-        //strcpy(src, "/ram/");
-        //strcat(src, fullpathsavefilename);
-        //unlink(fullpathsavefilename);
-        /*if (remove(fullpathsavefilename)==0)
-            printf("file remove %s ok\n", fullpathsavefilename);
-        else
-            printf("file remove %s error\n", fullpathsavefilename);*/
-
-        /*if (fs_unlink(fullpathsavefilename) == 0)
-            printf("file_ remove %s ok\n", fullpathsavefilename);
-        else
-            printf("file_ remove %s error\n", fullpathsavefilename);*/
-#endif
     }
 #ifdef _arch_dreamcast
     fs_chdir("/cd");//VMU
 #endif
-}
-#else
-void readsavenames(void)
-{
-    int32_t dummy;
-    short i;
-    uint8_t  fn[] = "game_.sav";
-    FILE* fil;
-    char* fullpathsavefilename;
-
-#ifdef _arch_dreamcast
-    //fs_chdir("/ram");
-    char fullpathsavefilenamedc[16];
-#endif
-
-    for (i = 0;i < 10;i++)
-    {
-
-        fn[4] = i + '0';
-        fullpathsavefilename = fn;
-
-#ifdef _arch_dreamcast
-       
-        if ((fil = fopen(fullpathsavefilenamedc, "rb")) == NULL) continue;
-        
-#else
-        if ((fil = fopen(fullpathsavefilename, "rb")) == NULL) continue;
-#endif
-        dfread(&dummy, 4, 1, fil);
-
-        //	FIX_00015: Backward compliance with older demos (down to demos v27, 28, 116 and 117 only)
-        if (dummy != BYTEVERSION &&
-            dummy != BYTEVERSION_27 &&
-            dummy != BYTEVERSION_28 &&
-            dummy != BYTEVERSION_116 &&
-            dummy != BYTEVERSION_117) continue;
-        //printf("dummy %d\n", dummy);
-        // FIX_00092: corrupted saved files making the following saved files invisible (Bryzian)
-        dfread(&dummy, 4, 1, fil);
-        dfread(&ud.savegame[i][0], 19, 1, fil);
-        fclose(fil);
-    }
-    free(lfilename);
 }
 #endif
 /*
