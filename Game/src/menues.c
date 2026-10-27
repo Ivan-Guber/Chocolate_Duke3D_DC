@@ -313,7 +313,7 @@ void getangplayers(short snum)
         }
     }
 }
-#ifdef old
+#ifdef PCVER
 int loadpheader(uint8_t  spot,int32 *vn,int32 *ln,int32 *psk,int32 *nump)
 {
 
